@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proferater</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/proferater.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Proferater</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="dashboard.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Colleges <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Br. Andrew Gonzalez College of Education (BAGCED)</a></li>
+              <li><a href="#">College of Computer Studies (CCS)</a></li>
+              <li><a href="#">College of Law (COL)</a></li>
+              <li><a href="#">College of Liberal Arts (CLA)</a></li>
+              <li><a href="#">College of Science (COS)</a></li>
+              <li><a href="#">Gokongwei College of Engineering (GCOE)</a></li>
+              <li><a href="#">Ramon V. del Rosario College of Business (RVRCOB)</a></li>
+              <li><a href="#">School of Economics (SOE)</a></li>
+            </ul>
+          </li>
+          <li><a href="searchresult.html">Search</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">John Baptiste De La Salle<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#"><span class="glyphicon glyphicon-cog"></span> Edit Account Settings</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <h2>Ramon Bautista</h2>
+      <hr>
+      <div class="row"></div>
+      <div class = "col-md-3">
+        <h4>
+          <span class="glyphicon glyphicon-user"></span>
+          Information
+        </h4>
+        <div class="alert alert-info">
+          <h4>College</h4>
+          <p>College of Computer Studies</p>
+          <br>
+          <h4>Department</h4>
+          <p>Software Technology</p>
+        </div>
+      </div>
+
+      <div class = "col-md-9">
+        <h4>
+          <span class="glyphicon glyphicon-star"></span>
+          Overall Average Rating
+        </h4>
+        <div class="alert alert-success">
+          <ul class="list-inline">
+            <li class="badges"><img class="img-circle" src="badges/Approachability.png" alt="placeholder"/>
+              <h2>1.0</h2>
+              <h5>Approachability</h5>
+            </li>
+          <li class="badges">
+          <img class="img-circle" src="badges/Clarity.png" alt="placeholder"/>
+          <h2>2.0</h2><h5>Clarity</h5>
+          </li>
+          <li class="badges"><img class="img-circle" src="badges/Competence.png" alt="placeholder"/>
+            <h2>3.0</h2><h5>Competence</h5>
+          </li>
+          <li class="badges">
+            <img class="img-circle" src="badges/Engagement.png" alt="placeholder"/>
+            <h2>2.0</h2><h5>Engagement</h5></li>
+            <li class="badges">
+          <img class="img-circle" src="badges/Workload.png" alt="placeholder"/>
+          <h2>3.0</h2><h5>Workload</h5>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="row">
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Rate Professor</h4>
+              </div>
+              <div class="modal-body">
+
+                <fieldset>
+
+                    <div class="control-group">
+
+                      <label for="max-subject" class="control-label">Approachability:</label>
+                      <div class="controls">
+                        <select id="max-subject" name="max_subjects" class="input-mini"><option value="3">1</option><option value="4">2</option><option value="5">3</option><option value="6">4</option><option value="6">5</option></select>
+                      </div>
+                    </div>
+                    <div class="control-group">
+
+                      <label for="max-subject" class="control-label">Clarity:</label>
+                      <div class="controls">
+                        <select id="max-subject" name="max_subjects" class="input-mini"><option value="3">1</option><option value="4">2</option><option value="5">3</option><option value="6">4</option><option value="6">5</option></select>
+                      </div>
+                    </div>
+                    <div class="control-group">
+
+                      <label for="max-subject" class="control-label">Competence:</label>
+                      <div class="controls">
+                        <select id="max-subject" name="max_subjects" class="input-mini"><option value="3">1</option><option value="4">2</option><option value="5">3</option><option value="6">4</option><option value="6">5</option></select>
+                      </div>
+                    </div>
+                    <div class="control-group">
+
+                      <label for="max-subject" class="control-label">Engagement:</label>
+                      <div class="controls">
+                        <select id="max-subject" name="max_subjects" class="input-mini"><option value="3">1</option><option value="4">2</option><option value="5">3</option><option value="6">4</option><option value="6">5</option></select>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label for="max-subject" class="control-label">Workload:</label>
+                      <div class="controls">
+                        <select id="max-subject" name="max_subjects" class="input-mini"><option value="3">1</option><option value="4">2</option><option value="5">3</option><option value="6">4</option><option value="6">5</option></select>
+                      </div>
+                    </div>
+                  </fieldset>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit Rating</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Rate this professor!
+          </button>
+        </div>
+        <div class="col-md-9">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Course Ratings</a></li>
+            <li><a href="#">Tips</a></li>
+          </ul>
+
+
+          <div class="alert alert-success">
+            <h3>COMPRO1 - Introduction To Computer Programming</h3>
+          <ul class="list-inline">
+            <li class="badges"><img class="img-circle" src="badges/Approachability.png" alt="placeholder"/>
+              <h2>1.0</h2>
+              <h5>Approachability</h5>
+            </li>
+          <li class="badges">
+          <img class="img-circle" src="badges/Clarity.png" alt="placeholder"/>
+          <h2>2.0</h2><h5>Clarity</h5>
+          </li>
+          <li class="badges"><img class="img-circle" src="badges/Competence.png" alt="placeholder"/>
+            <h2>3.0</h2><h5>Competence</h5>
+          </li>
+          <li class="badges">
+            <img class="img-circle" src="badges/Engagement.png" alt="placeholder"/>
+            <h2>2.0</h2><h5>Engagement</h5></li>
+            <li class="badges">
+          <img class="img-circle" src="badges/Workload.png" alt="placeholder"/>
+          <h2>3.0</h2><h5>Workload</h5>
+          </li>
+        </ul>
+      </div>
+
+      <div class="alert alert-success">
+            <h3>DISCTRU - Discrete Structures</h3>
+          <ul class="list-inline">
+            <li class="badges"><img class="img-circle" src="badges/Approachability.png" alt="placeholder"/>
+              <h2>1.0</h2>
+              <h5>Approachability</h5>
+            </li>
+          <li class="badges">
+          <img class="img-circle" src="badges/Clarity.png" alt="placeholder"/>
+          <h2>2.0</h2><h5>Clarity</h5>
+          </li>
+          <li class="badges"><img class="img-circle" src="badges/Competence.png" alt="placeholder"/>
+            <h2>3.0</h2><h5>Competence</h5>
+          </li>
+          <li class="badges">
+            <img class="img-circle" src="badges/Engagement.png" alt="placeholder"/>
+            <h2>2.0</h2><h5>Engagement</h5></li>
+            <li class="badges">
+          <img class="img-circle" src="badges/Workload.png" alt="placeholder"/>
+          <h2>3.0</h2><h5>Workload</h5>
+          </li>
+        </ul>
+      </div>
+        </div>
+      </div>
+      
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
