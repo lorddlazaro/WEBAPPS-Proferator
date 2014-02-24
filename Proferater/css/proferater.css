@@ -1,3 +1,4 @@
+
 .prof-image{
 	width: 75px;
 	margin-right: 10px;
@@ -16,4 +17,25 @@
 }
 .prof-panel-body:hover{
 	text-decoration: none;
+}
+.logo {
+	font-family: "Intrique Script Personal Use";
+	font-size: 50px;
+}
+
+.logo:hover {
+	color: #1F4E79;
+	text-decoration: none;
+}
+
+.navbar .btn {
+  margin-top: 10px;
+}
+
+.navbar .form-control {
+	margin-top: 10px;
+}
+
+.navbar ul li {
+	margin-top: 10px;
 }
