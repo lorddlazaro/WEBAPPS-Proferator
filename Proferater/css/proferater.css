@@ -17,12 +17,3 @@
 .prof-panel-body:hover{
 	text-decoration: none;
 }
-
-<div class="row">
-    <div class="col-md-9">
-      <b class="text-muted">136 ratings</b>
-    </div>
-    <div class="col-md-3">
-      <button type="button" class="btn btn-primary btn-xs"> <b> Rate this prof </b></button>
-    </div>
-  </div>
