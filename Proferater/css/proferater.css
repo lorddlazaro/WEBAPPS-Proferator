@@ -173,6 +173,16 @@ body {
 	height: 25px;
 }
 
+.legend {
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.legend-item {
+	font-size: 16px;
+}
 
 .rate-sd:active,
 .rate-sd.active {
@@ -218,9 +228,9 @@ body {
 }
 
 
-.btn.disabled,
-.btn[disabled],
-fieldset[disabled] .btn {
+.rate.disabled,
+.rate[disabled],
+fieldset[disabled] .rate {
   pointer-events: none;
   cursor: not-allowed;
   filter: alpha(opacity=65);
