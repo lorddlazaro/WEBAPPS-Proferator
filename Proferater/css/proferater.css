@@ -132,6 +132,7 @@ body {
 	background-color: #ff6666;
 	border: none;
 }
+
 .rate-d{
 	background-color: #ffcc33;
 	border: none;
@@ -149,13 +150,81 @@ body {
 	border: none;
 }
 
-.rate:hover {
-	background-color: #333;
-	color: #FFF
+.rate-sd:hover{
+	background-color: #cc3333;
+	color: #fff;
+}
+.rate-d:hover{
+	background-color: #ffcc00;
+}
+.rate-n:hover{
+	background-color: #ffff99;
+}
+.rate-a:hover{
+	background-color: #6699cc;
+}
+.rate-sa:hover{
+	background-color: #06f;
 }
 
 .rate {
 	font-size: 18px;
 	padding: 0px;
 	height: 25px;
+}
+
+
+.rate-sd:active,
+.rate-sd.active {
+  	background-color: #cc3333;
+  	color: #FFF;
+  	outline: 5;
+  	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.rate-d:active,
+.rate-d.active {
+ 	background-color: #ffcc00;
+  	outline: 5;
+  	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.rate-n:active,
+.rate-n.active {
+ 	background-color: #ffff99;
+  	outline: 5;
+  	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.rate-a:active,
+.rate-a.active {
+ 	background-color: #6699cc;
+	border: none;
+  	outline: 5;
+  	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.rate-sa:active,
+.rate-sa.active {
+ 	background-color: #06f;
+	border: none;
+  	outline: 5;
+  	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 1;
 }
