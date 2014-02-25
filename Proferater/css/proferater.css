@@ -13,17 +13,33 @@
 
 .prof-name{
 	margin-top: 10px;
+	font-family: Aleo Regular;
+
 }
+
 .prof-panel-body:hover{
 	text-decoration: none;
 }
+
+.prof-panel-body {
+	color: #4169E1;
+}
+
+.num-rating {
+	margin-right: 10px;
+}
+
 .logo {
 	font-family: "Intrique Script Personal Use";
 	font-size: 50px;
+	color:#EB3430;
+	padding-left: 5px;
 }
 
+
+
 .logo:hover {
-	color: #1F4E79;
+	color: #CC0000;
 	text-decoration: none;
 }
 
@@ -37,3 +53,61 @@
 
 .navbar ul li {
 	margin-top: 10px;
+}
+
+.rc-form-text {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Aleo Regular;
+}
+
+.rating {
+	margin-bottom: 10px;
+}
+
+body {
+	font-family: Tahoma;
+}
+
+.progress {
+	margin-top: 20px;
+}
+
+.prof-character {
+	font-family: Aleo Bold;
+	text-align: center;
+	margin-top: 0px;
+}
+
+@font-face {
+	font-family: "Aleo Regular";
+	src: url('../fonts/aleo/Aleo-Regular.otf');
+}
+
+@font-face {
+	font-family: "Aleo Bold";
+	src: url('../fonts/aleo/Aleo-Bold.otf');
+}
+
+.course-item {
+	font-family: Aleo Regular;
+	display: inline-block;
+}
+
+.course-panel-heading {
+	font-family: Aleo Regular;
+}
+
+h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.num-rating {
+	font-size: 13px;
+	margin-top: 6px;
+}
+
+.btn-proferate{
+	margin-top: 2px;
+}

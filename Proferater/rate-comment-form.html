@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,35 +47,57 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-1">
-          <button type="button" class="btn btn-default">Cancel <span class="glyphicon glyphicon-remove"></span></button>
-        </div>
-        <div class="col-md-6">
-          <h3>Professor X <small> in</small></h3>
-          <h1>TELEKIN <small>is</small></h2>
-          <h2>Approachable <small><span class="glyphicon glyphicon-info-sign"></span></small> </h2>
+        <div class="col-md-8">
+          <h3 class="rc-form-text" style="color: #33CCCC">Professor X <small> in</small></h3>
+          <h1 class="rc-form-text" style="color: #F48C2F">TELEKIN <small>is</small></h1>
+          <div>
+          <h1 class="prof-character" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Easy to talk to">
+            Approachable
+            <small>
+              <span class="glyphicon glyphicon-info-sign"id="info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Easy to talk to"></span>
+            </small>
+          </h1>
+          
           <form role="form">
-            <div class="form-group"> 
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">Strongly Disagree</button>
-                <button type="button" class="btn btn-default">Disagree</button>
-                
-                <button type="button" class="btn btn-default">Neutral</button>
-                
-                <button type="button" class="btn btn-default">Agree</button>
-                <button type="button" class="btn btn-default">Strongly Agree</button>
-              </div>
-            </div>
+            <div class="form-group">
+              <div class="btn-group rating btn-group-justified">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Strongly Disagree</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Disagree</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Neutral</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Agree</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Strongly Agree</button>
+                </div>
+              </div> <!-- btn-group -->
+            </div> <!-- form-group -->
             <div class="for-group">
-              <textarea class="form-control" rows="3"> What makes the professor approachable?</textarea>
+              <textarea class="form-control" rows="3" placeholder="What makes the professor approachable"></textarea>
             </div>
           </form>
-          <button type="button" class="btn btn-default">Back</button>
-          <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    <span class="sr-only">60% Complete</span>
-  </div>
-</div><button type="button" class="btn btn-primary">Next</button>
+          </div> <!-- char, rate, comment -->
+          <div class="span4">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                <span class="sr-only">60% Complete</span>
+              </div>
+            </div> <!-- progress bar -->
+          </div><!-- span8 -->
+          <div class="form-commands">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn btn-default rc-form-btn">Back</button>
+              <button type="button" class="btn btn-primary">Next</button>
+            </div>
+            <button type="button" class="btn btn-default rc-form-btn">Cancel</button>
+
+          </div>
         </div>
       </div>
     </div>
@@ -86,5 +107,7 @@
     <script src="js/jquery-2.1.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/proferater.js"></script>
+
   </body>
 </html>
