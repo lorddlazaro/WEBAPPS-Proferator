@@ -92,6 +92,7 @@ body {
 .course-item {
 	font-family: Aleo Regular;
 	display: inline-block;
+	width: 100%;
 }
 
 .course-panel-heading {
