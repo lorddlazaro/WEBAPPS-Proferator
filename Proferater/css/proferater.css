@@ -14,7 +14,6 @@
 .prof-name{
 	margin-top: 10px;
 	font-family: Aleo Regular;
-
 }
 
 .prof-panel-body:hover{
@@ -27,6 +26,14 @@
 
 .num-rating {
 	margin-right: 10px;
+}
+
+.rc-form-professor {
+	color: #3CC;
+}
+
+.rc-form-course {
+	color: #F48C2F;
 }
 
 .logo {
@@ -350,4 +357,24 @@ fieldset[disabled] .rate {
 
 .vote-down:hover {
 	color: #900;
+}
+
+.navbar-toggle {
+	margin-top: 17px;
+	border: none;
+	
+	
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #EB3430;
+}
+
+textarea {
+	resize: none;
+}
+
+.rc-form-btn-submit {
+	margin-left: 10px;
 }
