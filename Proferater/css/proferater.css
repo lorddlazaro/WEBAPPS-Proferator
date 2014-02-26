@@ -126,6 +126,7 @@ body {
 
 .rate-summary{
 	margin-top: 0px;
+	float:right;	
 }
 
 .rate-sd{
@@ -171,6 +172,7 @@ body {
 	font-size: 18px;
 	padding: 0px;
 	height: 25px;
+	width: 32px;
 }
 
 /*.legend {
@@ -265,4 +267,87 @@ fieldset[disabled] .rate {
   -webkit-box-shadow: none;
           box-shadow: none;
   opacity: 1;
+}
+
+.comment-panel {
+	border: none;
+}
+.comment-panel-heading {
+	display: block;
+}
+
+.comments {
+	font-family: Aleo Regular;
+}
+
+.factor-item {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-left: none;
+	border-right: none;
+}
+
+.comment-item {
+	padding: 5px;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	width: 100%;
+	display: inline-block;
+}
+
+.commenter {
+	font-weight: bold;
+	margin-left: 5px;	
+}
+
+.comment-factor {
+	font-weight: bold;
+	margin-left: 1px;
+	font-size: 12px;
+	color: #999;
+}
+
+.comments:hover {
+	text-decoration: none;
+}
+
+.comment-body{
+	margin-left: 5px;
+}
+
+.comment-date-time {
+	margin-left: 5px;
+	color: #999;
+}
+
+.comment-vote-up {
+	color: #060;
+	margin-left: 2px;
+}
+
+.comment-vote-down {
+	color: #900;
+	margin-left: 5px;
+}
+
+.vote {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.vote-up {
+	color: #060;
+}
+
+.vote-up:hover {
+	color: #030;
+}
+
+.vote-down {
+	color: #c00;
+}
+
+.vote-down:hover {
+	color: #900;
 }
