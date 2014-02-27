@@ -5,37 +5,62 @@ $(document).ready(function(){
 	});
 
 	$('#next').click(function(){
-		if($('#factor').text()=="Fair Grade"){
+		if($('#factor').text()=="Fair in Grading"){
 			$('#factor').text('Clear');
+			$(".progress-bar").css("width", "37.5%");
 		}
-		else if($('#factor').text()=="Clear")
+		else if($('#factor').text()=="Clear"){
+			$(".progress-bar").css("width", "50%");
 			$('#factor').text('Knowledgeable');
-		else if($('#factor').text()=="Knowledgeable")
+		}
+		else if($('#factor').text()=="Knowledgeable"){
+			$(".progress-bar").css("width", "62.5%");
 			$('#factor').text('Engaging');
-		else if($('#factor').text()=="Engaging")
-			$('#factor').text('Fair Workload');
-		else if($('#factor').text()=="Fair Workload")
+		}
+		else if($('#factor').text()=="Engaging"){
+			$(".progress-bar").css("width", "75%");
+			$('#factor').text('Fair on Workload');
+		}
+		else if($('#factor').text()=="Fair on Workload"){
+			$(".progress-bar").css("width", "87.5%");
 			$('#factor').text('Considerate');
-		else if($('#factor').text()=="Considerate")
+		}
+		else if($('#factor').text()=="Considerate"){
+			$(".progress-bar").css("width", "100%");
 			$('#factor').text('Approachable');
-		else if($('#factor').text()=="Approachable")
+		}
+		else if($('#factor').text()=="Approachable"){
 			$('nextButton').prop('disabled', true);
+		}
 	});
 
 	$('#back').click(function(){
-		if($('#factor').text()=="Fair Grade")
+		if($('#factor').text()=="Fair in Grading"){
+			$(".progress-bar").css("width", "25%");
 			$('backButton').prop('disabled', true);
-		else if($('#factor').text()=="Clear")
-			$('#factor').text('Fair Grade');
-		else if($('#factor').text()=="Knowledgeable")
+		}
+		else if($('#factor').text()=="Clear"){
+			$(".progress-bar").css("width", "25%");
+			$('#factor').text('Fair in Grading');
+		}
+		else if($('#factor').text()=="Knowledgeable"){
+			$(".progress-bar").css("width", "37.5%");
 			$('#factor').text('Clear');
-		else if($('#factor').text()=="Engaging")
+		}
+		else if($('#factor').text()=="Engaging"){
+			$(".progress-bar").css("width", "50%");
 			$('#factor').text('Knowledgeable');
-		else if($('#factor').text()=="Fair Workload")
+		}
+		else if($('#factor').text()=="Fair on Workload"){
+			$(".progress-bar").css("width", "62.5%");
 			$('#factor').text('Engaging');
-		else if($('#factor').text()=="Considerate")
-			$('#factor').text('Fair Workload');
+		}
+		else if($('#factor').text()=="Considerate"){
+			$(".progress-bar").css("width", "75%");
+			$('#factor').text('Fair on Workload');
+		}
 		else if($('#factor').text()=="Approachable"){
+			$(".progress-bar").css("width", "87.5%");
 			$('#factor').text('Considerate');
 			$('nextButton').prop('disabled', false);
 		}
@@ -60,6 +85,7 @@ $(document).ready(function(){
 	    	alert("enabled!");
 	    }
 	}
+
 });
 
 
@@ -71,6 +97,6 @@ function rcFormEmpty() {
 }
 
 
-$(".progress-bar").css("width", "100%");
+/*$(".progress-bar").css("width", "14.2857143%");*/
 
 
