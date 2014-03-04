@@ -80,6 +80,10 @@ body {
 	margin-top: 20px;
 }
 
+.course-panel-group {
+	padding-left: 0px;
+}
+
 .prof-character {
 	font-family: Aleo Bold;
 	text-align: center;
@@ -180,6 +184,10 @@ body {
 	padding: 0px;
 	height: 25px;
 	width: 32px;
+}
+
+.search-container {
+	margin-top: 5-px;
 }
 
 /*.legend {
@@ -285,6 +293,15 @@ fieldset[disabled] .rate {
 
 .comments {
 	font-family: Aleo Regular;
+}
+
+.factor-description {
+	font-size: 12px;
+	font-family: Tahoma;
+	color: #999;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
 
 .factor-item {

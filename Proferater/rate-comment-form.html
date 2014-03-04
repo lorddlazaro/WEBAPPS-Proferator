@@ -47,15 +47,21 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <h3 class="rc-form-text rc-form-professor">Lordd Michael Lazaro <small> in</small></h3>
           <h1 class="rc-form-text rc-form-course">COMPRO1 <small>is</small></h1>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
           <div>
           <h1 class="prof-character" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Easy to talk to">
             <span id="factor">Fair in Grading</span>
             <small>
-              <span class="glyphicon glyphicon-info-sign"id="info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Easy to talk to"></span>
+             <!--  <span class="glyphicon glyphicon-info-sign"id="info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Easy to talk to"></span> -->
             </small>
+            <div class="factor-description">
+              Note: A professor fair in grading is someone who gives grade that the student deserves.
+            </div>
           </h1>
           
           <form role="form" id="rate-comment-form">
@@ -91,14 +97,17 @@
             </div> <!-- progress bar -->
           </div><!-- span8 -->
           <div class="form-commands">
-            <button type="button" id="submit" class="btn btn-primary disabled pull-right rc-form-btn-submit" onclick="rcFormNext()">Submit</button>
-            <div class="btn-group pull-right">
+            <div class="btn-group pull-left">
               <button type="button" id="back" class="btn btn-default rc-form-btn" onclick="rcFormBack()">Back</button>
-              <button type="button" id="next" class="btn btn-default">Next</button>
+              <button type="button" id="next" class="btn btn-primary">Next</button>
             </div>
-            <button type="button" id="cancel" class="btn btn-default rc-form-btn" onclick="rcFormCancel()">Cancel</button>
+            <button type="button" id="cancel" class="btn btn-default rc-form-btn pull-right" onclick="rcFormCancel()">Cancel</button>
 
           </div>
+          
+          
+          <!-- DIV -->
+        </div>
         </div>
       </div>
     </div>
