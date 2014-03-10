@@ -1,3 +1,17 @@
+.brand-name {
+	font-family: "Intrique Script Personal Use";
+	font-size: 12em;
+	color:#EB3430;
+	padding-left: 5px;
+}
+.text-white{
+	color: #fff;
+}
+.value-prop {
+	background: #303030 url("../images/classroom2.jpg") no-repeat center center;
+	background-size: cover;
+	height: 1000px;
+}
 .prof-image{
 	width: 75px;
 	margin-right: 10px;
