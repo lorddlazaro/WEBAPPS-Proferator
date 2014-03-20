@@ -79,12 +79,7 @@ $(document).ready(function(){
 		alert("Submit is clicked");
 	});
 
-	if($(".progress-bar").css("width") == $(".progress").css("width")){
-		$('button#submit').prop('disabled', false);
-	    if(!$('button#submit').prop('disabled')){
-	    	alert("enabled!");
-	    }
-	}
+	
 
 });
 
