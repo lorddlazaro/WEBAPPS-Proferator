@@ -57,7 +57,12 @@
 	padding-left: 5px;
 }
 
-
+.logo-big {
+	font-size: 100px;
+	padding-left: 0px;
+	margin-left: -20px;
+	text-align: center;
+}
 
 .logo:hover {
 	color: #CC0000;
@@ -96,6 +101,13 @@ body {
 
 .course-panel-group {
 	padding-left: 0px;
+}
+
+.course-panel-body {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .prof-character {
@@ -299,7 +311,8 @@ fieldset[disabled] .rate {
 }
 
 .comment-panel {
-	border: none;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .comment-panel-heading {
 	display: block;
@@ -319,10 +332,20 @@ fieldset[disabled] .rate {
 }
 
 .factor-item {
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: none;
+	border-bottom: none;
 	border-left: none;
 	border-right: none;
+}
+.factor-item:first-child{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.factor-item:last-child{
+	border-bottom: none;
 }
 
 .comment-item {
@@ -332,6 +355,10 @@ fieldset[disabled] .rate {
 	border-bottom: none;
 	width: 100%;
 	display: inline-block;
+}
+
+.comment-item:first-child {
+	border-top-right-radius: none;
 }
 
 .commenter {
@@ -408,4 +435,21 @@ textarea {
 
 .rc-form-btn-submit {
 	margin-left: 10px;
+}
+
+.login-panel {
+	border: none;
+	
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.login-input {
+	height: 40px;
+}
+
+.login-button {
+	width: 100%;
+	height: 40px;
 }
