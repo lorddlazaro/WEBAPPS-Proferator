@@ -17,8 +17,10 @@ class RatingAdmin(admin.ModelAdmin):
 	list_filter = ['time']
 
 class AccountAdmin(admin.ModelAdmin):
-	fields = ["email","name","isVerified"]
 	search_fields = ['name']
+	fieldsets = [
+		('Basic Information', {'fields':['name', 'email', 'isVerified']}),
+	]
 
 class ClassAdmin(admin.ModelAdmin):
 	list_diplay = ('term','course','professor')
