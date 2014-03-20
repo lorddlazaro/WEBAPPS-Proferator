@@ -1,14 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from django.views import generic
 
 from rate.models import *
 # Create your views here.
 
 def index(request):
-    latest_professor_list = Professor.objects.all()
+    latest_professor_list = Professor.objects.all().order_by
     context = {'latest_professor_list':latest_professor_list}
-    return render(request, 'rate/index.html', context)
+    return render(request, 'proferater/index.html', context)
     #template = loader.get_template('rate/index.html')
     #context = RequestContext(request, {
     #    'latest_professor_list': latest_professor_list,
