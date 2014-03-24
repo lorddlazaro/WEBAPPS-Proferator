@@ -31,7 +31,7 @@ def profile(request, professor_id):
     pass
 
 def rate(request, professor_id):
-    r = Rating(time=timezone.now(), account=)
-    f = Factor(name=, description=)
+    #r = Rating(time=timezone.now(), account=)
+    #f = Factor(name=, description=)
     #return HttpResponse("You're Looking at the professor rate form %s" % professor_id)
     pass
