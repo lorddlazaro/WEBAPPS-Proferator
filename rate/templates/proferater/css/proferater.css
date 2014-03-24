@@ -7,6 +7,10 @@
 .text-white{
 	color: #fff;
 }
+.text-black{
+	color: #333;
+}
+
 .value-prop {
 	background: #303030 url("../images/classroom2.jpg") no-repeat center center;
 	background-size: cover;
@@ -25,9 +29,15 @@
 	float:right;
 }
 
+
 .prof-name{
-	margin-top: 10px;
+	margin-top: 3px;
+	margin-bottom: 0px;
 	font-family: Aleo Regular;
+}
+
+.prof-college {
+	margin-top: 0px;
 }
 
 .prof-panel-body:hover{
@@ -165,6 +175,17 @@ body {
 
 .btn-proferate{
 	margin-top: 5px;
+	font-family: Tahoma;
+	float:right;
+}
+
+.float-right {
+	float: right;
+}
+
+.btn-proferate-small{
+	padding-top: 2px;
+	padding-bottom: 2px;
 	font-family: Tahoma;
 	float:right;
 }
@@ -488,5 +509,17 @@ color: #FFF;
 
 .mastfoot {
 	margin-top: 85px;
+	font-size: 15px;
+}
+
+.height-30 {
+	font-size: 28px;
+}
+
+.aleo-regular {
+	font-family: Aleo Regular;
+}
+
+.n-rates {
 	font-size: 15px;
 }
