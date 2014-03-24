@@ -16,6 +16,7 @@ class Account(models.Model):
     email = models.CharField(max_length=200,unique=True)
     isVerified = models.BooleanField()
     name = models.CharField(max_length=200)
+    
     def __str__(self):
         return self.name
 
@@ -56,8 +57,13 @@ class Factor(models.Model):
 class FactorRating(models.Model):
     value = models.IntegerField()
     comment = models.CharField(max_length=500)
+
     factor = models.ForeignKey(Factor)
     rating = models.ForeignKey(Rating)
     class Meta:
         unique_together = ("rating", "factor") #unique together actually applies here
-
+    
+    def was_published_recently(self):
+        return self.pub_date>=timezone.now() - datetime.timedelta(days=1)
+    was_published_recently.admin_order_field = 'time'
+    was_published_recently.boolean = True

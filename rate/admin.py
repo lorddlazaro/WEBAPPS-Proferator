@@ -6,7 +6,9 @@ class ProfessorAdmin(admin.ModelAdmin):
 	fields = ["name","college"]
 	search_fields = ['name']
 
-class FactorRatingInline(admin.TabularInline):
+admin.site.register(Professor)
+
+class FactorRatingInline(admin.StackedInline):
     model = FactorRating
     extra = 7
 
@@ -16,18 +18,22 @@ class RatingAdmin(admin.ModelAdmin):
 	inlines = [FactorRatingInline]
 	list_filter = ['time']
 
+admin.site.register(Rating, RatingAdmin)
+
 class AccountAdmin(admin.ModelAdmin):
-	fields = ["email","name","isVerified"]
 	search_fields = ['name']
+	fieldsets = [
+		('Basic Information', {'fields':['name', 'email', 'isVerified']}),
+	]
+
+admin.site.register(Account,AccountAdmin)
 
 class ClassAdmin(admin.ModelAdmin):
 	list_diplay = ('term','course','professor')
 
-admin.site.register(Professor)
+admin.site.register(Class,ClassAdmin)
+
 admin.site.register(College)
 admin.site.register(Department)
-admin.site.register(Rating, RatingAdmin)
-admin.site.register(Account,AccountAdmin)
 admin.site.register(Course)
-admin.site.register(Class,ClassAdmin)
 admin.site.register(Factor)
