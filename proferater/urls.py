@@ -10,4 +10,5 @@ urlpatterns = patterns('',
 
     url(r'^proferater/',include('rate.urls',namespace="rate")),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/docs', include('django.contrib.admindocs.urls'))
 )

@@ -57,7 +57,6 @@ class Factor(models.Model):
 class FactorRating(models.Model):
     value = models.IntegerField()
     comment = models.CharField(max_length=500)
-
     factor = models.ForeignKey(Factor)
     rating = models.ForeignKey(Rating)
     class Meta:
@@ -67,3 +66,11 @@ class FactorRating(models.Model):
         return self.pub_date>=timezone.now() - datetime.timedelta(days=1)
     was_published_recently.admin_order_field = 'time'
     was_published_recently.boolean = True
+
+#model for professor with number of rating
+class ProfessorView(models.Model):
+    name = models.ForeignKey(Professor)
+    raters = models.IntegerField()
+
+    def __str__(self):
+        return self.name
