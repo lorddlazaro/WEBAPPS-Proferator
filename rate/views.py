@@ -31,7 +31,8 @@ def profile(request, professor_id):
     pass
 
 def rate(request, professor_id):
-    #r = Rating(time=timezone.now(), account=)
+    factor = get_object_or_404(FactorRating, v=value)
+    r = Rating(time=timezone.now())
+    selectedvalue = factor.value_set.get(value=request.POST['choice'])
     #f = Factor(name=, description=)
-    #return HttpResponse("You're Looking at the professor rate form %s" % professor_id)
-    pass
+    return HttpResponse("You're Looking at the professor rate form %s" % professor_id)
