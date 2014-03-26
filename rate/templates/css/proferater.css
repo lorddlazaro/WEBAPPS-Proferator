@@ -7,6 +7,10 @@
 .text-white{
 	color: #fff;
 }
+.text-black{
+	color: #333;
+}
+
 .value-prop {
 	background: #303030 url("../images/classroom2.jpg") no-repeat center center;
 	background-size: cover;
@@ -25,9 +29,15 @@
 	float:right;
 }
 
+
 .prof-name{
-	margin-top: 10px;
+	margin-top: 3px;
+	margin-bottom: 0px;
 	font-family: Aleo Regular;
+}
+
+.prof-college {
+	margin-top: 0px;
 }
 
 .prof-panel-body:hover{
@@ -67,6 +77,18 @@
 .logo:hover {
 	color: #CC0000;
 	text-decoration: none;
+}
+
+.logo-big:hover {
+	color: #F33;
+}
+
+.logo-nav {
+	color:#FFF;
+}
+
+.logo-nav:hover {
+	color:#FCC;
 }
 
 .navbar .btn {
@@ -153,6 +175,17 @@ body {
 
 .btn-proferate{
 	margin-top: 5px;
+	font-family: Tahoma;
+	float:right;
+}
+
+.float-right {
+	float: right;
+}
+
+.btn-proferate-small{
+	padding-top: 2px;
+	padding-bottom: 2px;
 	font-family: Tahoma;
 	float:right;
 }
@@ -419,18 +452,38 @@ fieldset[disabled] .rate {
 
 .navbar-toggle {
 	margin-top: 17px;
-	border: none;
-	
-	
+	border: none;	
 }
 
+.navbar {
+	border: none;
+	background-color: #EB3430; 
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #FCC;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+}
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #EB3430;
+	background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #FF3333;
 }
 
 textarea {
 	resize: none;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+background-color: #EB3430;
+color: #FFF;
 }
 
 .rc-form-btn-submit {
@@ -439,7 +492,7 @@ textarea {
 
 .login-panel {
 	border: none;
-	
+	box-shadow: 0 0px 0px rgba(0,0,0,0);
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -452,4 +505,21 @@ textarea {
 .login-button {
 	width: 100%;
 	height: 40px;
+}
+
+.mastfoot {
+	margin-top: 85px;
+	font-size: 15px;
+}
+
+.height-30 {
+	font-size: 28px;
+}
+
+.aleo-regular {
+	font-family: Aleo Regular;
+}
+
+.n-rates {
+	font-size: 15px;
 }

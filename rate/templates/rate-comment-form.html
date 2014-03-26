@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo" href="#">Proferater</a>
+          <a class="logo logo-nav" href="home.html">Proferater</a>
         </div>
         
         <div class="navbar-collapse collapse">    
@@ -42,13 +42,13 @@
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">CCS</a></li>
-              <li><a href="#">COS</a></li>
-              <li><a href="#">COB</a></li>
-              <li><a href="#">COE</a></li>
-              <li><a href="#">SOE</a></li>
-              <li><a href="#">CLA</a></li>
-              <li><a href="#">CED</a></li>
+              <li><a href="#">College of Computer Studies</a></li>
+              <li><a href="#">College of Science</a></li>
+              <li><a href="#">RVR College of Business</a></li>
+              <li><a href="#">College of Engineering</a></li>
+              <li><a href="#">School of Economics</a></li>
+              <li><a href="#">College of Liberal Arts</a></li>
+              <li><a href="#">College of Education</a></li>
             </ul>
           </li>
           </ul>
@@ -79,23 +79,24 @@
             </div>
           </h1>
           
-          <form role="form" id="rate-comment-form">
+          <form role="form" action="{% url 'polls:vote' professor_id %}" id="rate-comment-form" method="post">
+          <!--{% csrf_token %}-->
             <div class="form-group">
               <div class="btn-group btn-group-justified" data-toggle="buttons">
                 <label class="btn btn-group rate-sd">
-                  <input type="radio" name="rating" id="sd"> Strongly<br>Disagree
+                  <input type="radio" name="rating" id="sd" value="10"> Strongly<br>Disagree
                 </label>
                 <label class="btn btn-group rate-d">
-                  <input type="radio" name="rating" id="d"> Disagree
+                  <input type="radio" name="rating" id="d" value="20"> Disagree
                 </label>
                 <label class="btn btn-group rate-n">
-                  <input type="radio" name="rating" id="n"> Neutral
+                  <input type="radio" name="rating" id="n" value="30"> Neutral
                 </label>
                 <label class="btn btn-group rate-a">
-                  <input type="radio" name="rating" id="a"> Agree
+                  <input type="radio" name="rating" id="a" value="40"> Agree
                 </label>
                 <label class="btn btn-group rate-sa">
-                  <input type="radio" name="rating" id="sa"> Strongly<br>Agree
+                  <input type="radio" name="rating" id="sa" value="50"> Strongly<br>Agree
                 </label>
               </div><!-- btn-group justified -->
             </div> <!-- form-group -->
@@ -128,6 +129,11 @@
     </div>
 
     </div> <!--end of container -->
+    <div class="row mastfoot text-center">
+      <div class="inner">
+        <p>Copyright 2014 <a href="http://getbootstrap.com">About Us</a></p>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-2.1.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

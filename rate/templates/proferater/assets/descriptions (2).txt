@@ -1,0 +1,64 @@
+xFair in Grading 
+Desc: free from bias and according to the grading system
+
+SD - The professor does not base his grades on the student's performance.
+D - The professor is biased in grading.
+N - The professor is sometimes biased in grading.
+A - The professor's grading is greatly dependent on the performance of the student.
+SA - The professor strictly bases his grades based on his student's performance.
+
+
+Clear
+desc: clarity in giving lectures with respect to voice projection and flow of discussion
+
+SD - The professor is not able to clearly explain the lessons and leaves the students more confused. 
+D - The professor is neither clear not understandable in explaining the lessons.
+N - The professor needs to explain the lessons further for the students to understand better.
+A - The professor is able to clearly explain the lessons in an understandable manner.
+SA - The professor is able to focus on explaining and making the students understand the important parts of the lessons. 
+
+Knowledgeable
+desc: mastery of the subject
+
+SD - The professor has no mastery in teaching the subject.
+D - The professor has little mastery on the subject being taught.
+N - The professor fairly mastered the subject.
+A - The professor mastered the subject being taught.
+SA - The professor mastered the subject and gives additional and updated information to the students.
+
+Engaging
+desc: encourages class interaction and participation 
+
+SD - The professor does not engage the students in class discussions.
+D - The professor sometimes engage the students into class discussions.
+N - The professor encourages the students to engage in class discussions often.
+A - The professor provides a conducive learning atmosphere for the students.
+SA - The professor always makes the learning atmosphere enjoyable and encourages the class to be interactive.
+
+Fair on Workload
+desc: heaviness or lightness of requirements are reasonable with respect to time
+
+SD - The professor gives unreasonable amount of projects and quizzes to be done in a short time.
+D - The professor gives a lot of projects and quizzes.
+N - The professor gives enough projects and quizzes.
+A - The professor gives a fair amount of projects and quizzes.
+SA - The professor gives reasonable amount of projects and quizzes to be done to be done in enough time.
+
+Considerate
+desc: the level of strictness and empathy
+
+SD - The professor is strict and does not excuse students.
+D -  The professor is strict but allows students to be excused for valid reasons approved by the school administration.
+N -  The professor sees the effort of the student but follows school policies in excusing students.
+A - The professor acknowledges the efforts given by the student.
+SA - The professor considers the efforts given by the student.
+
+Approachable
+desc: the easiness to talk with or ask questions
+
+SD - The professor has an intimidating aura.
+D - The professor is a little intimidating.
+N - The professor is neither intimidating nor welcoming.
+A - The professor is welcoming.
+SA - The professor is very welcoming.
+
