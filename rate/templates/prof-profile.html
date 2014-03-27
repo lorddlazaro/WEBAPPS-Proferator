@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proferater</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/proferater.css" rel="stylesheet">
+
+  </head>
+  <body>
+<div data-role="page" id="prof-page">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="#">Proferater</a>
+        </div>
+        
+        <div class="navbar-collapse collapse">    
+          <form class="navbar-form navbar-left" role="search" action="searchresult.html">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div><!-- form-group -->
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign up</a></li>
+        </div><!--/.navbar-collapse -->
+      </div> <!-- container-fluid -->
+    </div> 
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <row>
+          <div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <img src="assets/prof-image.jpg" class="img-rounded pull-left prof-image">
+                <div class="prof-name">
+                  Lordd Michael Lazaro
+                </div><!-- prof-name -->
+                <div class="prof-college">
+                  College of Computer Studies
+                </div><!-- prof-college -->
+                <div class="prof-department">
+                  Software Technology Department
+                </div><!-- prof-department -->
+              </div><!-- panel-body -->
+              <div class="panel-footer">
+                113 rates
+              </div><!-- panel-footer -->
+            </div><!-- panel panel-default -->
+          </div><!-- professor information -->
+          <div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                Courses
+              </div><!-- panel-heading -->
+              <div class="panel-body course-panel-body">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#">COMPRO1</a></li>
+                  <li><a href="#">COMPRO2</a></li>
+                  <li><a href="#">DASALGO</a></li>
+                  <li><a href="#">OBJECTP</a></li>
+                </ul>
+              </div><!-- panel-body -->           
+            </div><!-- panel panel-default -->
+          </div><!-- professor course list -->
+          </row>
+        </div><!-- col-md-4 -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="panel-group" id="Course">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <a class="course-item" data-parent="#Course">
+                    COMPRO1
+                  </a>
+                  <span class="pull-right">
+                    <a href="rate-comment-form.html">
+                    <button type="button" class="btn btn-primary btn-xs btn-proferate"><b>Proferate!</b></button></a>
+                    <b class="text-muted num-rating">136 ratings</b>
+                  </span>
+                </h3>
+              </div>
+                <li href="#" class="list-group-item factor-item">
+                  <i class="icon-caret-right"></i>
+                  <h4 class="list-item-prof-character">
+                    Fair Grade
+                    <div class="col-md-8 btn-group rate-summary" data-toggle="buttons">
+                    <label class="btn btn-group rate-sd rate disabled">
+                      <input type="radio" name="rating" id="sd"> 10
+                    </label>
+                    <label class="btn btn-group rate-d rate disabled">
+                      <input type="radio" name="rating" id="d"> 30
+                    </label>
+                    <label class="btn btn-group rate-n rate disabled">
+                      <input type="radio" name="rating" id="n"> 20
+                    </label>
+                    <label class="btn btn-group rate-a rate disabled">
+                      <input type="radio" name="rating" id="a"> 15
+                    </label>
+                    <label class="btn btn-group rate-sa rate disabled">
+                      <input type="radio" name="rating" id="sa"> 25
+                    </label>
+                  </div><!-- btn-group justified -->
+                  </h4>
+                </li>
+                <li href="#" class="list-group-item factor-item">
+                  <i class="icon-caret-right"></i>
+                  <h4 class="list-item-prof-character">
+                    Clear
+                  
+                    <div class="btn-group rate-summary" data-toggle="buttons">
+                    <label class="btn btn-group rate-sd rate disabled">
+                      <input type="radio" name="rating" id="sd"> 10
+                    </label>
+                    <label class="btn btn-group rate-d rate disabled">
+                      <input type="radio" name="rating" id="d"> 30
+                    </label>
+                    <label class="btn btn-group rate-n rate disabled">
+                      <input type="radio" name="rating" id="n"> 20
+                    </label>
+                    <label class="btn btn-group rate-a rate disabled">
+                      <input type="radio" name="rating" id="a"> 15
+                    </label>
+                    <label class="btn btn-group rate-sa rate disabled">
+                      <input type="radio" name="rating" id="sa"> 25
+                    </label>
+                  </div><!-- btn-group justified -->
+                  </h4>
+                </li>
+                <li href="#" class="list-group-item factor-item">
+                  <i class="icon-caret-right"></i>
+                  <h4 class="list-item-prof-character">
+                    Knowledgeable
+                  
+                    <div class="btn-group rate-summary" data-toggle="buttons">
+                    <label class="btn btn-group rate-sd rate disabled">
+                      <input type="radio" name="rating" id="sd"> 10
+                    </label>
+                    <label class="btn btn-group rate-d rate disabled">
+                      <input type="radio" name="rating" id="d"> 30
+                    </label>
+                    <label class="btn btn-group rate-n rate disabled">
+                      <input type="radio" name="rating" id="n"> 20
+                    </label>
+                    <label class="btn btn-group rate-a rate disabled">
+                      <input type="radio" name="rating" id="a"> 15
+                    </label>
+                    <label class="btn btn-group rate-sa rate disabled">
+                      <input type="radio" name="rating" id="sa"> 25
+                    </label>
+                  </div><!-- btn-group justified -->
+                  </h4>
+                </li>
+            </div><!-- telekin -->
+          </div><!-- course panel-group -->
+          </div>
+        </div><!-- col-md-6 -->
+      </div><!-- row -->
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+                </a>
+</html>

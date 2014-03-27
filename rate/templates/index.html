@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proferater</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/proferater.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo logo-nav" href="home.html">Proferater</a>
+        </div>
+        <div class="navbar-collapse collapse">    
+          <form class="navbar-form navbar-left" role="search" action="searchresult.html">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" value="COMPRO1">
+            </div><!-- form-group -->
+
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">College of Computer Studies</a></li>
+              <li><a href="#">College of Science</a></li>
+              <li><a href="#">RVR College of Business</a></li>
+              <li><a href="#">College of Engineering</a></li>
+              <li><a href="#">School of Economics</a></li>
+              <li><a href="#">College of Liberal Arts</a></li>
+              <li><a href="#">College of Education</a></li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+       </div>
+      </div>
+		
+
+<<<<<<< HEAD:rate/templates/index.html
+	<div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            
+            <div class="panel-body">
+              
+              <img src="assets/prof-image.jpg" class="img-rounded pull-left prof-image">
+            {% if object_list %}
+    		   {% for professor in object_list %}
+    	        <h3 class="prof-name"><a href="professor-profile.html" class ="prof-panel-body">{{professor.name}}</h3></a>
+                <h4 class="text-muted">{{professor.college}}
+                	<small>{{professor.department}}</small></h4>
+
+               <div class="panel-footer">
+              <div>
+                <b class="text-muted">136 ratings</b>
+                <a href="rate-comment-form.html">
+                <button type="button" class="btn btn-primary btn-xs pull-right"> <b> Proferate! </b></button>
+                </a>
+              </div>
+            </div>
+    		   {% endfor %}
+			{% else %}
+   			<p>No professors listed on this course yet.</p>
+			{% endif %} 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+=======
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="login-panel panel panel-default">
+          <div class="panel-body">
+            <div class="logo logo-big">Proferater</div>
+            <form role="login" action="#">
+              <div class="form-group">
+                <input type="email" class="form-control login-input" placeholder="Email">
+                <br>
+                <input type="password" class="form-control login-input" placeholder="Password">
+              </div><!-- form-group -->
+              <button type="submit"  class="btn btn-primary login-button middle">Sign up</button>
+            </form>
+            <br>
+            <div class="text-center"><a href="login.html">Log in</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+      
+    </div>
+
+    </div> <!--end of container -->
+    <div class="row mastfoot text-center">
+      <div class="inner">
+        <p>Copyright 2014 <a href="http://getbootstrap.com">About Us</a></p>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+>>>>>>> c8a71961936268841113534b07bb0c7651f7a156:rate/templates/proferater/signup.html
+    <script src="js/jquery-2.1.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
