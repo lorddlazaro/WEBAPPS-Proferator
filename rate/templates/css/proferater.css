@@ -200,42 +200,51 @@ body {
 }
 
 .rate-sd{
-	background-color: #ff6666;
+	background-color: rgb(255, 80, 80);/*#ff6666*/
+	color: rgb(38, 38, 38);
 	border: none;
 }
 
 .rate-d{
-	background-color: #ffcc33;
+	background-color: rgb(255, 153, 51);/*#ffcc33*/
+	color: rgb(38, 38, 38);
 	border: none;
 }
 .rate-n{
-	background-color: #ffffcc;
+	background-color: rgb(255, 255, 102);/*#ffffcc*/
+	color: rgb(38, 38, 38);
 	border: none;
 }
 .rate-a{
-	background-color: #99ccff;
+	background-color: rgb(190, 255, 125);/*#99ccff;*/
+	color: rgb(38, 38, 38);
 	border: none;
 }
 .rate-sa{
-	background-color: #09f;
+	background-color: rgb(135, 225, 135);/*#09f;*/
+	color: rgb(38, 38, 38);
 	border: none;
 }
 
 .rate-sd:hover{
-	background-color: #cc3333;
-	color: #fff;
+	background-color: rgb(255, 47, 47);/*#cc3333;*/
+	color: rgb(38, 38, 38);/*#fff;*/
 }
 .rate-d:hover{
-	background-color: #ffcc00;
+	background-color: rgb(255, 136, 17);/*#ffcc00;*/
+	color: rgb(38, 38, 38);
 }
 .rate-n:hover{
-	background-color: #ffff99;
+	background-color: rgb(255, 255, 47);/*#ffff99;*/
+	color: rgb(38, 38, 38);
 }
 .rate-a:hover{
-	background-color: #6699cc;
+	background-color: rgb(152, 255, 51);/*#6699cc;*/
+	color: rgb(38, 38, 38);
 }
 .rate-sa:hover{
-	background-color: #06f;
+	background-color: rgb(51, 204, 51);/*#06f;*/
+	color: rgb(38, 38, 38);
 }
 
 .rate {
@@ -267,31 +276,34 @@ body {
 }
 
 .legend-rate-sd{
-	background-color: #ff6666;
-
+	background-color: rgb(255, 80, 80);/*#ff6666;*/
+	color: rgb(38, 38, 38);
 }
 
 .legend-rate-d{
-	background-color: #ffcc33;
+	background-color: rgb(255, 153, 51);/*#ffcc33;*/
+	color: rgb(38, 38, 38);
 
 }
 .legend-rate-n{
-	background-color: #ffffcc;
-
+	background-color: rgb(255, 255, 102);/*#ffffcc;*/
+	color: rgb(38, 38, 38);
 }
 .legend-rate-a{
-	background-color: #99ccff;
+	background-color: rgb(190, 255, 125);/*#99ccff;*/
+	color: rgb(38, 38, 38);
 
 }
 .legend-rate-sa{
-	background-color: #09f;
+	background-color: rgb(135, 225, 135);/*#09f;*/
+	color: rgb(38, 38, 38);
 
 }
 
 .rate-sd:active,
 .rate-sd.active {
-  	background-color: #cc3333;
-  	color: #FFF;
+  	background-color: rgb(255, 47, 47);/*#cc3333;*/
+  	color: rgb(38, 38, 38);
   	outline: 5;
   	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -299,7 +311,8 @@ body {
 
 .rate-d:active,
 .rate-d.active {
- 	background-color: #ffcc00;
+ 	background-color: rgb(255, 136, 17);/*#ffcc00;*/
+ 	color: rgb(38, 38, 38);
   	outline: 5;
   	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -307,7 +320,8 @@ body {
 
 .rate-n:active,
 .rate-n.active {
- 	background-color: #ffff99;
+ 	background-color: rgb(255, 255, 47);/*#ffff99;*/
+ 	color: rgb(38, 38, 38);
   	outline: 5;
   	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -315,7 +329,8 @@ body {
 
 .rate-a:active,
 .rate-a.active {
- 	background-color: #6699cc;
+ 	background-color: rgb(152, 255, 51);/*#6699cc;*/
+ 	color: rgb(38, 38, 38);
 	border: none;
   	outline: 5;
   	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -324,7 +339,8 @@ body {
 
 .rate-sa:active,
 .rate-sa.active {
- 	background-color: #06f;
+ 	background-color: rgb(51, 204, 51);/*#06f;*/
+ 	color: rgb(38, 38, 38);
 	border: none;
   	outline: 5;
   	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
