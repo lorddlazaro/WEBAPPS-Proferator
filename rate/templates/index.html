@@ -6,8 +6,9 @@
     <title>Proferater</title>
 
     <!-- Bootstrap -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet" type = "text/css">
-    <link href="static/css/proferater.css" rel="stylesheet" type = "text/css">
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type = "text/css">
+    <link href="/static/css/proferater.css" rel="stylesheet" type = "text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,6 +16,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
   </head>
   <body>
   	<div class="navbar navbar-default" role="navigation">
@@ -58,30 +61,31 @@
       </div>
 		</div>
 
+<div class="container search-container">
 	<div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
+          <div class="row aleo-regular rc-form-course">
+          <h1>Search Results for COMPRO1</h1>
+          <br>
+        </div>
+
           <div class="panel panel-default">
-            
-            <div class="panel-body">
-                  
-            {% if object_list %}
-    		   {% for professor in object_list %}
-    	         <img src="static/assets/prof-image.jpg" class="img-rounded pull-left prof-image">
-               <h3 class="prof-name"><a href="/professor/{{professor.id}}" class ="prof-panel-body">{{professor.name}}</h3></a>
-                <h4 class="text-muted">{{professor.college}}
-                	<small>{{professor.department}}</small></h4>
+             <a href="professor-profile.html" class ="prof-panel-body">
+              <div class="panel-body">
+                {% if object_list %}
+                  {% for professor in object_list %}
+                    {% load staticfiles %}
+                <img src="{% static "assets/prof-image.jpg" %}" alt="My image" class="img-rounded pull-left prof-image">
+                <h3 class="prof-name"><a href="/professor/{{professor.id}}" class ="prof-panel-body">{{professor.name}}</a>
+                  <button class="btn btn-primary pull-right btn-proferate-small">Proferate!</button>
+                </h3>
+                
+                 <h4 class="text-muted">{{professor.college}}
+                  <span href="#" class="n-rates float-right aleo-regular">193 ratings</span>
+                  <br><small>{{professor.department}}</small></h4>
 
-               <div class="panel-footer">
-              <div>
-                <b class="text-muted">136 ratings</b>
-                <a href="rate-comment-form.html">
-                <button type="button" class="btn btn-primary btn-xs pull-right"> <b> Proferate! </b></button>
-                </a>
-              </div>
-            </div>
-
-            <div class="btn-group btn-group-justified height-30" data-toggle="buttons">
+                <div class="btn-group btn-group-justified height-30" data-toggle="buttons">
                   <label class="btn btn-group legend-rate legend-rate-sd height-30 rate summary disabled text-black">
                     <input type="radio" name="rating" id="sd">15
                   </label>
@@ -98,15 +102,19 @@
                   <input type="radio" name="rating" id="sa">19
                   </label>
                 </div><!-- btn-group justified -->
+              </a>
+              </div>   
+            </div> 
     		   {% endfor %}
 			{% else %}
    			<p>No professors listed on this course yet.</p>
 			{% endif %} 
             </div>           
-          </div>
+          
         </div>
       </div>
-
+     </div> 
+          
     <div class="row mastfoot text-center">
       <div class="inner">
         <p>Copyright 2014 <a href="http://getbootstrap.com">About Us</a></p>
@@ -114,8 +122,8 @@
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-    <script src="static/js/jquery-2.1.0.js"></script>
+    <script src="/static/js/jquery-2.1.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
 </body>
 </html>
