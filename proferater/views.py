@@ -15,15 +15,18 @@ def auth_view(request):
 
     if user is not None:
         auth.login(request, user)
-        return HttpResponseRedirect('accounts/loggedin/')
+        return HttpResponseRedirect('loggedin/')
     else:
-        return HttpResponseRedirect('accounts/invalid/')
+        return HttpResponseRedirect('invalid/')
 
 def loggedin(request):
     return render_to_response('professor-profile.html')
 
 def invalid_login(request):
+    c = {}
+    c.update(csrf(request))
     return render_to_response('login.html')
+    #invalid not yet working
 
 def logout(request):
     auth.logout(request)
