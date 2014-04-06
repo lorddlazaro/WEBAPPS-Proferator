@@ -8,7 +8,13 @@ urlpatterns = patterns('',
     # url(r'^$', 'proferater.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^proferater/',include('rate.urls',namespace="rate")),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^admin/docs', include('django.contrib.admindocs.urls'))
+    url(r'^admin/docs', include('django.contrib.admindocs.urls')),
+    url(r'^accounts/login/$', 'proferater.views.login'),
+    url(r'^accounts/auth/$', 'proferater.views.auth_view'),
+    url(r'^accounts/logout/$', 'proferater.views.logout'),
+    url(r'^accounts/loggedin/$', 'proferater.views.loggedin'),
+    url(r'^accounts/invalid/$', 'proferater.views.invalid_login'),
+    #url(r'^proferater/',include('rate.urls',namespace="rate")),
+
 )

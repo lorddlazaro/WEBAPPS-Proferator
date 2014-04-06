@@ -66,11 +66,11 @@
         <div class="login-panel panel panel-default">
           <div class="panel-body">
             <div class="logo logo-big">Proferater</div>
-            <form role="login" action="/login/" method="post">
+            <form role="login" action="/accounts/auth/" method="POST">{% csrf_token %}
               <div class="form-group">
-                <input type="email" class="form-control login-input" placeholder="Email">
+                <input type="email" class="form-control login-input" placeholder="Email" name="email">
                 <br>
-                <input type="password" class="form-control login-input" placeholder="Password">
+                <input type="password" class="form-control login-input" placeholder="Password" name="password">
               </div><!-- form-group -->
 
               <button type="submit"  class="btn btn-primary login-button middle">Login</button>
