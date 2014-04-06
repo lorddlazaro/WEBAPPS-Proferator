@@ -25,6 +25,7 @@ class Professor(models.Model):
     name = models.CharField(max_length=200, unique=True)
     college = models.ForeignKey(College)
     department = models.ForeignKey(Department)
+    # ratings = models.ForeignKey(Rating)
     def __str__(self):
         return self.name
 
