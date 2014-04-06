@@ -68,7 +68,7 @@
             <div class="logo logo-big">Proferater</div>
             <form role="login" action="/accounts/auth/" method="POST">{% csrf_token %}
               <div class="form-group">
-                <input type="email" class="form-control login-input" placeholder="Email" name="email">
+                <input type="email" class="form-control login-input" placeholder="Email" name="username" id="username">
                 <br>
                 <input type="password" class="form-control login-input" placeholder="Password" name="password">
               </div><!-- form-group -->
