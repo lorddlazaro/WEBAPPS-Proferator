@@ -5,14 +5,16 @@ from rate.models import *
 urlpatterns = patterns('',
     # ex: /polls/
     # url(r'^', views.index, name='index'),
-    url(r'^$', ListView.as_view(
-        queryset = Professor.objects.all().order_by("-name")[:10],
-    	template_name="index.html")),
+    url(r'^$', views.signup, name='signup'),
+    #url(r'^$', ListView.as_view(
+    #    queryset = Professor.objects.all().order_by("-name")[:10],
+    #	template_name="index.html")),
     #url for the professor list order by ratings
     # ex: /polls/5/
-    url(r'^(?P<course_id>\d+)/searchresults/$', ListView.as_view(
-        queryset = ProfessorView.objects.all().order_by("-name") [:5],
-        template_name="searchresults.html")),
+    #url(r'^(?P<course_id>\d+)/searchresults/$', ListView.as_view(
+    #    queryset = ProfessorView.objects.all().order_by("-name") [:5],
+    #    template_name="searchresults.html")),
+
     # # ex: /polls/5/results/
     # url(r'^(?P<professor_id>\d+)/profile/$', views.profile, name='profile'),
     # # ex: /polls/5/vote/
