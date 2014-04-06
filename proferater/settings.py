@@ -82,6 +82,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = {
+    "C:/Users/fabs/Envs/proferater/WEBAPPS-Proferator/static",
+}
+
+STATICFILES_FINDERS = {
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+
+}
 
 #Templates to load
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates/')]
