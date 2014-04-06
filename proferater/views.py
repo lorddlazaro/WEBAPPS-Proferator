@@ -2,6 +2,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.core.context_processors import csrf
+from django.contrib.auth.forms import UserCreationForm
 
 def login(request):
     c = {}
@@ -10,14 +11,15 @@ def login(request):
 
 def auth_view(request):
     username = request.POST.get('username', '')
+    print(username)
     password = request.POST.get('password', '')
     user = auth.authenticate(username=username, password=password)
 
     if user is not None:
         auth.login(request, user)
-        return HttpResponseRedirect('loggedin/')
+        return HttpResponseRedirect('/accounts/loggedin/')
     else:
-        return HttpResponseRedirect('invalid/')
+        return HttpResponseRedirect('/accounts/invalid/')
 
 def loggedin(request):
     return render_to_response('professor-profile.html')
@@ -30,5 +32,22 @@ def invalid_login(request):
 
 def logout(request):
     auth.logout(request)
+    return render_to_response('home.html')
+
+def register_user(request):
+    if request.method=='POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/accounts/register_success')
+
+    args = {}
+    args.update(csrf(request))
+
+    args['form'] = UserCreationForm()
+    #print args
+    return render_to_response('signup.html', args)
+
+def register_success(request):
     return render_to_response('home.html')
 
