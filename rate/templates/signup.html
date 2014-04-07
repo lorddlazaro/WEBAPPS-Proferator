@@ -67,8 +67,9 @@
           <div class="panel-body">
             <div class="logo logo-big">Proferater</div>
             <form role="login" action="#" method='POST'>{% csrf_token %}
-            {{form.as_p}}
-              <!--<div class="form-group">
+            
+              <div class="form-group">
+              {{form.as_p}}
                 <input type="email" class="form-control login-input" placeholder="Email">
                 <br>
                 <input type="password" class="form-control login-input" placeholder="Password">
@@ -91,10 +92,10 @@
       </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.0.js"></script>
+    <script src="/static/js/jquery-2.1.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/proferater.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/proferater.js"></script>
 
   </body>
 </html>

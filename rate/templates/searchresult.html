@@ -8,8 +8,8 @@
     <title>Proferater</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/proferater.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/proferater.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,7 +76,7 @@
           <div class="panel panel-default">
             <a href="professor-profile.html" class ="prof-panel-body">
               <div class="panel-body">
-                <img src="assets/prof-image.jpg" class="img-rounded pull-left prof-image">
+                <img src="/static/assets/prof-image.jpg" class="img-rounded pull-left prof-image">
                 <h3 class="prof-name rc-form-professor">
                   Lazaro, Lordd Michael
                   <button class="btn btn-primary pull-right btn-proferate-small">Proferate!</button>
@@ -111,10 +111,10 @@
             </a>
             
 
-          </div><div class="panel panel-default">
+          </div><div class="panel panel-default" action="/accounts/loggedin/professor-profile/">
             <a href="professor-profile.html" class ="prof-panel-body">
               <div class="panel-body">
-                <img src="assets/prof-image.jpg" class="img-rounded pull-left prof-image">
+                <img src="/static/assets/prof-image.jpg" class="img-rounded pull-left prof-image">
                 <h3 class="prof-name rc-form-professor">
                   Lazaro, Lordd Michael
                   <button class="btn btn-primary pull-right btn-proferate-small">Proferate!</button>
@@ -212,8 +212,8 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.0.js"></script>
+    <script src="/static/js/jquery-2.1.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
   </body>
 </html>

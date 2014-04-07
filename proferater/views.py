@@ -11,18 +11,17 @@ def login(request):
 
 def auth_view(request):
     username = request.POST.get('username', '')
-    print(username)
     password = request.POST.get('password', '')
     user = auth.authenticate(username=username, password=password)
 
     if user is not None:
         auth.login(request, user)
-        return HttpResponseRedirect('/accounts/loggedin/')
+        return HttpResponseRedirect('/proferater/search/')
     else:
         return HttpResponseRedirect('/accounts/invalid/')
 
 def loggedin(request):
-    return render_to_response('professor-profile.html')
+    return render_to_response('index.html')
 
 def invalid_login(request):
     return render_to_response('login.html')
@@ -47,5 +46,18 @@ def register_user(request):
     return render_to_response('signup.html', args)
 
 def register_success(request):
-    return render_to_response('home.html')
+    return render_to_response('/proferater/home/')
 
+def professor_profile(request):
+    return render_to_response('professor-profile.html')
+
+def view_rate(request):
+    return HttpResponseRedirect('/proferater/rate/')
+
+def rate(request):
+    return render_to_response('rate-comment-form.html')
+
+def search(request):
+    if request.method == "POST":
+        search_text = request.POST['search_text']
+        return render_to_response('index.html')
