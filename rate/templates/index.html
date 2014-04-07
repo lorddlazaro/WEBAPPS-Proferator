@@ -73,11 +73,11 @@
         {% if object_list %}
           {% for professor in object_list %}
           <div class="panel panel-default">
-             <a href="professor-profile.html" class ="prof-panel-body">
+             <a href="/proferater/professor_profile/" class ="prof-panel-body">
               <div class="panel-body">
                     {% load staticfiles %}
                 <img src="{% static "assets/prof-image.jpg" %}" alt="My image" class="img-rounded pull-left prof-image">
-                <h3 class="prof-name"><a href="/professor/{{professor.id}}" class ="prof-panel-body">{{professor.name}}</a>
+                <h3 class="prof-name"><a href="/proferater/professor_profile/" class ="prof-panel-body">{{professor.name}}</a>
                   <a href="/proferater/rate/"><button class="btn btn-primary pull-right btn-proferate-small">Proferate!</button>
                 </h3>
                 

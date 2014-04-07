@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     url(r'^accounts/register_success/$', 'proferater.views.register_success'),
     url(r'^proferater/search/',include('rate.urls',namespace="rate")),
     url(r'^proferater/professor/',include('rate.urls',namespace="rate")),
-    url(r'^accounts/loggedin/professor_profile/$', 'proferater.views.professor_profile'),
+    url(r'^proferater/professor_profile/$', 'proferater.views.professor_profile'),
     url(r'^proferater/home/$', 'proferater.views.logout'),
     url(r'^proferater/rate/$', 'proferater.views.rate'),
 

@@ -51,9 +51,6 @@ def register_success(request):
 def professor_profile(request):
     return render_to_response('professor-profile.html')
 
-def view_rate(request):
-    return HttpResponseRedirect('/proferater/rate/')
-
 def rate(request):
     return render_to_response('rate-comment-form.html')
 
