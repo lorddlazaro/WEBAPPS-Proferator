@@ -67,8 +67,8 @@
           <div class="panel-body">
             <div class="logo logo-big">Proferater</div>
             <form role="login" action="#" method='POST'>{% csrf_token %}
-            {{form}}
-              <div class="form-group">
+            {{form.as_p}}
+              <!--<div class="form-group">
                 <input type="email" class="form-control login-input" placeholder="Email">
                 <br>
                 <input type="password" class="form-control login-input" placeholder="Password">
